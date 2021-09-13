@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /*height: 100%;
+  min-height: -webkit-fill-available;
+  background: radial-gradient(ellipse at bottom, #5091DD 0%, #030617 100%);*/
+  background:
+    radial-gradient(circle at bottom left, #ffffff 0%, #1d242d 50%),
+    url(../images/reuben-and-cc.jpg),
+    #2d4152;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply, color-dodge;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  /*min-height: -webkit-fill-available;*/
+  display: flex;
+  flex-direction: column;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+a:link,
+a:hover,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#video-block {
+  width: 96%;
+}
+
+#video-cont {
+  padding: 56.25% 0 0 0;
+  position: relative;
+}
+
+#video-cont > iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#link-block {
+  text-align: center;
+  width: 96%;
+  margin: 0;
+  padding: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  #video-block,
+  #link-block {
+    width: 80%;
+    max-width: 992px;
+  }
+}
