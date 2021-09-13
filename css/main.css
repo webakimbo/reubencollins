@@ -10,7 +10,8 @@ html {
     radial-gradient(circle at bottom left, #ffffff 0%, #1d242d 50%),
     url(../images/reuben-and-cc.jpg),
     #2d4152;
-  background-size: cover;
+  background-size: contain;
+  background-position: bottom left;
   background-repeat: no-repeat;
   background-blend-mode: multiply, color-dodge;
 }
