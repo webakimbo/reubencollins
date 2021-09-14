@@ -3,23 +3,19 @@
 }
 
 html {
-  /*height: 100%;
-  min-height: -webkit-fill-available;
-  background: radial-gradient(ellipse at bottom, #5091DD 0%, #030617 100%);*/
-  background:
-    radial-gradient(circle at bottom left, #ffffff 0%, #1d242d 50%),
-    url(../images/reuben-and-cc.jpg),
-    #2d4152;
-  background-size: contain;
-  background-position: bottom left;
+  background: radial-gradient(circle at bottom left, #ffffff 0%, #031c3c 90%),
+    url(../images/bg.jpg),
+    #031c3c;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-blend-mode: multiply, color-dodge;
+  background-blend-mode: soft-light;
 }
 
 body {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
   min-width: 320px;
   min-height: 100vh;
-  /*min-height: -webkit-fill-available;*/
   display: flex;
   flex-direction: column;
   flex-direction: column;
@@ -31,8 +27,28 @@ a:link,
 a:hover,
 a:active,
 a:visited {
-  text-decoration: none;
   color: #ffffff;
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+h1 {
+  font-family: "Cormorant Upright", serif;
+  margin: 0;
+}
+
+h2 {
+  font-family: "Cormorant Upright", serif;
+  margin-top: 0;
+}
+
+#headline-block {
+  text-align: center;
+  width: 96%;
 }
 
 #video-block {
@@ -60,9 +76,24 @@ a:visited {
 }
 
 @media screen and (min-width: 768px) {
+  #headline-block,
   #video-block,
   #link-block {
     width: 80%;
     max-width: 992px;
+  }
+
+  h1 {
+    display: inline-block;
+  }
+
+  h1:after {
+    content: ' | ';
+  }
+
+  h2 {
+    font-size: 2em;
+    display: inline-block;
+    padding-left: 5px;
   }
 }
