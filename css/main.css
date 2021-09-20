@@ -75,6 +75,23 @@ h2 {
   padding: 50px;
 }
 
+#link-block a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#link-block a svg {
+  width: 24px;
+  height: auto;
+  margin-right: 0.5em;
+  flex: none;
+}
+
+#link-block a span {
+  text-align: left;
+}
+
 @media screen and (min-width: 768px) {
   #headline-block,
   #video-block,
